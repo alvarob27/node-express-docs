@@ -1,123 +1,369 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
+	<main class="min-h-screen pt-5 pb-10 bg-[#eaffee] md:text-justify">
+		<h1
+			class="cabinetGrotesk-black text-4xl md:text-5xl text-left md:text-center text-[#0f172a] px-5 py-4 md:py-8 lg:py-12 pb-5"
 		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
+			<strong><em>Explorando Node.js y Express.js</em></strong>
+		</h1>
+		<section
+			class="flex flex-col justify-evenly md:items-center gap-12 px-5"
+		>
+			<section
+				class="flex flex-col md:flex-row justify-evenly md:items-center gap-20 pt-5"
+			>
+				<figure class="flex justify-center items-center">
+					<img
+						id="imgNode"
+						class="w-44 h-44 md:w-48 md:h-48 lg:w-72 lg:h-72"
+						src="../public/img/nodejs-circular.png"
+					/>
+				</figure>
+
+				<article id="descubriendoNode"
+					class="flex flex-col gap-5 md:max-w-md lg:max-w-lg xl:max-w-xl"
 				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+					<h1
+						class="cabinetGrotesk-black text-4xl text-left text-[#0f172a] md:ml-0"
+					>
+						<strong><em>Descubriendo Node.js</em></strong>
+					</h1>
+					<p class="interFont text-lg">
+						<em>Node.js</em> no es solo un entorno de ejecución para
+
+						<span class="underline">JavaScript</span> en el lado del
+						servidor, es la <strong>clave</strong> para desbloquear
+						el potencial <u>ilimitado</u> de tus aplicaciones web. A
+						diferencia de la ejecución tradicional en el navegador, <em
+							>Node.js</em
+						> lleva la <em>magia</em> al servidor, simplificando la
+						creación de aplicaciones <strong>escalables</strong> y
+						de <strong>alto rendimiento</strong>. Su característica
+						estelar radica en la <u>habilidad</u> de manejar <em
+							>múltiples conexiones simultáneamente</em
+						> a través de un modelo de E/S no bloqueante. En otras
+						palabras, puede procesar <span class="underline"
+							>numerosas solicitudes</span
+						> sin atascar el hilo de ejecución, desencadenando una <strong
+							>eficiencia</strong
+						> y <strong>velocidad</strong> impresionantes en tus
+						aplicaciones.
+					</p>
+				</article>
+			</section>
+
+			<article id="panoramaNode"
+				class="flex flex-col gap-5 md:max-w-2xl lg:max-w-3xl xl:max-w-5xl"
+			>
+				<h1
+					class="cabinetGrotesk-black text-4xl text-left md:text-center text-[#0f172a] md:ml-0"
+				>
+					<strong
+						><em>Importancia en el Panorama Web Actual</em></strong
+					>
+				</h1>
+				<p class="interFont text-lg">
+					La <strong>importancia</strong> de <em>Node.js</em> en el
+					panorama web actual radica en varios aspectos <u>clave</u>:
+				</p>
+				<ul class="list-disc list-inside text-lg flex flex-col gap-5">
+					<li>
+						<strong>JavaScript en el Servidor:</strong> Permite a
+						los desarrolladores utilizar <span class="underline"
+							>JavaScript</span
+						> tanto en el lado del cliente como en el servidor,
+						simplificando el desarrollo web al utilizar un único
+						lenguaje de programación en todo el stack.
+					</li>
+					<li>
+						<strong>Eficiencia y Escalabilidad:</strong> La
+						arquitectura no bloqueante de <em>Node.js</em> facilita
+						la construcción de aplicaciones altamente eficientes y
+						escalables. Puede manejar un gran número de conexiones
+						simultáneas, lo que es crucial para aplicaciones web
+						modernas con múltiples usuarios.
+					</li>
+					<li>
+						<strong>npm (Node Package Manager):</strong>
+						<em>npm</em> es el gestor de paquetes de <em>Node.js</em
+						> y es la mayor colección de bibliotecas de código
+						abierto del mundo. Facilita la integración de módulos y
+						librerías, acelerando el desarrollo de aplicaciones.
+					</li>
+					<li>
+						<strong>Comunidad Activa:</strong>
+						<em>Node.js</em> cuenta con una comunidad activa de
+						desarrolladores que contribuyen a su mejora continua.
+						Esto asegura que esté en constante evolución y se adapte
+						a las necesidades cambiantes del desarrollo web.
+					</li>
+					<li>
+						<strong>Adopción Empresarial:</strong> Muchas grandes
+						empresas han adoptado <em>Node.js</em> para sus
+						servicios de servidor, lo que ha contribuido a su
+						crecimiento y consolidación en el panorama empresarial.
+						Ejemplos incluyen Netflix, LinkedIn, y PayPal.
+					</li>
+				</ul>
+			</article>
+
+			<article id="historiaNode"
+				class="flex flex-col gap-10 md:max-w-2xl lg:max-w-3xl xl:max-w-5xl"
+			>
+				<h1
+					class="cabinetGrotesk-black text-4xl text-left md:text-center text-[#0f172a] md:ml-0"
+				>
+					<strong><em>Breve Historia de Node.js</em></strong>
+				</h1>
+
+				<p class="interFont text-lg">
+					<strong>Node.js</strong> fue creado por <strong
+						>Ryan Dahl</strong
+					> y su desarrollo comenzó en <strong>2009</strong>. La
+					motivación principal de Dahl fue superar las limitaciones de
+					los modelos de E/S bloqueantes utilizados comúnmente en el
+					desarrollo de servidores web. Quería construir un entorno
+					que pudiera manejar <u>múltiples conexiones simultáneas</u>
+					 de manera eficiente, utilizando el motor V8 de Google
+					Chrome para ejecutar <span class="underline"
+						>JavaScript fuera del navegador</span
+					>.
+				</p>
+
+				<p class="interFont text-lg">
+					<strong>Empresa que lo Mantiene Actualmente:</strong>
+					<strong>Node.js</strong> está actualmente mantenido por la <strong
+						>Node.js Foundation</strong
+					>, que se formó para supervisar el desarrollo y la evolución
+					de la plataforma. En <strong>2019</strong>, la Node.js
+					Foundation se fusionó con la JS Foundation para consolidar
+					recursos y esfuerzos en la gestión de proyectos de código
+					abierto relacionados con JavaScript.
+				</p>
+
+				<h2 class="cabinetGrotesk-black text-[#0f172a] text-2xl">
+					<strong>Evolución y Hitos en el Desarrollo:</strong>
+				</h2>
+
+				<ul class="list-disc list-inside text-lg flex flex-col gap-5">
+					<li>
+						<strong>2009:</strong> Lanzamiento de la primera versión
+						estable de <strong>Node.js</strong>.
+					</li>
+					<li>
+						<strong>2010:</strong> Introducción de <strong
+							>npm (Node Package Manager)</strong
+						>, que se convirtió en una parte integral del ecosistema
+						de <strong>Node.js</strong>.
+					</li>
+					<li>
+						<strong>2011:</strong>
+						<strong>Joyent</strong>, la empresa donde trabajaba <strong
+							>Ryan Dahl</strong
+						>, creó el Comité Asesor Técnico de <strong
+							>Node.js</strong
+						> para guiar el desarrollo.
+					</li>
+					<li>
+						<strong>2015:</strong> Lanzamiento de <strong
+							>Node.js</strong
+						> v4.0.0, que incluyó el motor V8 de Google actualizado
+						y marcó el comienzo de la convergencia de las variantes
+						de <strong>Node.js</strong>.
+					</li>
+					<li>
+						<strong>2019:</strong> La <strong
+							>Node.js Foundation</strong
+						> se fusiona con la <strong>JS Foundation</strong>,
+						formando la <strong>OpenJS Foundation</strong> para
+						proporcionar una base sólida para el desarrollo continuo
+						de <strong>Node.js</strong>.
+					</li>
+				</ul>
+
+				<h2 class="cabinetGrotesk-black text-[#0f172a] text-2xl">
+					<strong
+						>Empresas que lo Usan Actualmente con Datos
+						Significativos:</strong
+					>
+				</h2>
+
+				<ul class="list-disc list-inside text-lg flex flex-col gap-5">
+					<li>
+						<strong>Netflix:</strong> Migró de servidores clásicos a
+
+						<strong>Node.js</strong> para mejorar la velocidad y la
+						escalabilidad de su plataforma de transmisión de video.
+					</li>
+
+					<li>
+						<strong>LinkedIn:</strong> Utiliza <strong
+							>Node.js</strong
+						> para mejorar el rendimiento y la eficiencia en el
+						manejo de conexiones simultáneas en aplicaciones web.
+					</li>
+
+					<li>
+						<strong>PayPal:</strong> Adoptó <strong>Node.js</strong>
+						 para mejorar la velocidad de desarrollo y la eficiencia
+						de sus servicios de pago en línea.
+					</li>
+				</ul>
+
+				<p class="interFont text-lg">
+					Estas empresas han experimentado mejoras significativas en
+					el rendimiento y la escalabilidad al adoptar <strong
+						>Node.js</strong
+					>, lo que demuestra su capacidad para manejar entornos web
+					exigentes y su atractivo en el desarrollo de servicios de
+					servidor modernos.
+				</p>
+
+				<hr class="h-1 bg-black ml-12 mr-12" />
+			</article>
+		</section>
+
+		<!-- Parte de Express.js -->
+
+		<section
+			class="flex flex-col md:flex-row justify-center md:items-center gap-20 px-5 pt-12"
+		>
+			<figure class="flex justify-center items-center">
+				<img
+					id="imgExpress"
+					class="w-44 h-44 md:w-48 md:h-48 lg:w-72 lg:h-72"
+					src="../public/img/express-circular.png"
+				/>
+			</figure>
+
+			<article id="descubriendoExpress"
+				class="flex flex-col gap-12 md:max-w-md lg:max-w-lg xl:max-w-xl"
+			>
+				<h1
+					class="cabinetGrotesk-black text-4xl text-left text-[#0f172a] md:ml-0"
+				>
+					<strong><em>Descubriendo Express.js</em></strong>
+				</h1>
+
+				<p class="interFont text-lg">
+					<strong>Express.js</strong> es un marco de aplicación web para <strong
+						>Node.js</strong
+					> que simplifica el desarrollo de aplicaciones web y APIs
+					(Interfaz de Programación de Aplicaciones). Se centra en la
+					construcción rápida y eficiente de aplicaciones web utilizando <strong
+						>Node.js</strong
+					> como entorno de ejecución del lado del servidor.
+				</p>
+			</article>
+		</section>
+
+		<article id="historiaExpress"
+			class="flex flex-col gap-10 md:max-w-2xl lg:max-w-3xl xl:max-w-5xl m-auto px-5 pt-10"
+		>
+			<h1 class="cabinetGrotesk-black text-4xl text-left md:text-center text-[#0f172a] md:ml-0"
+				>
+					<strong><em>Breve Historia de Express.js</em></strong>
+				</h1>
+			<p class="interFont text-lg">
+				<strong>Express.js</strong> fue creado por <strong
+					>TJ Holowaychuk</strong
+				> y se lanzó por primera vez en <strong>2010</strong>.
+				Holowaychuk buscaba un marco minimalista y flexible que
+				permitiera construir aplicaciones web de manera rápida y sin
+				imponer demasiadas restricciones.
+			</p>
+			<h2 class="cabinetGrotesk-black text-[#0f172a] text-2xl">
+				<strong
+					>Empresa desarrolladora:</strong
+				>
+			</h2>
+			<p class="interFont text-lg">
+				 Inicialmente, <strong>Express.js</strong> no estaba respaldado
+				por una empresa específica. <strong>TJ Holowaychuk</strong> y
+				otros desarrolladores contribuyeron al proyecto de manera
+				independiente. A medida que creció en popularidad, se convirtió
+				en un proyecto de código abierto con una comunidad activa de
+				desarrolladores.
+			</p>
+			<h2 class="cabinetGrotesk-black text-[#0f172a] text-2xl">
+				<strong
+					>Mantenimiento actual:</strong
+				>
+			</h2>
+			<p class="interFont text-lg">
+				 En la actualidad, <strong>Express.js</strong> es mantenido por
+				la comunidad de desarrolladores de código abierto. No está
+				vinculado a una empresa específica, lo que resalta su naturaleza
+				comunitaria y su flexibilidad para adaptarse a las
+				contribuciones de desarrolladores individuales.
+			</p>
+			<h2 class="cabinetGrotesk-black text-[#0f172a] text-2xl">
+				<strong
+					>Aspectos técnicos:</strong
+				>
+			</h2>
+			<ul class="list-disc list-inside text-lg flex flex-col gap-5">
+				<li>
+					<strong>Rutas (Routing):</strong>
+					<strong>Express.js</strong> facilita la definición de rutas
+					para manejar solicitudes HTTP. Permite la creación de rutas
+					específicas para diferentes métodos HTTP (GET, POST, etc.) y
+					parámetros dinámicos.
+				</li>
+				<li>
+					<strong>Generator:</strong>
+					<strong>Express.js</strong> en sus versiones anteriores
+					soportaba generadores, que son funciones especiales de
+					JavaScript utilizadas para facilitar el manejo de
+					operaciones asíncronas. Sin embargo, este enfoque ha sido
+					reemplazado en gran medida por promesas y async/await en
+					versiones más recientes de JavaScript y <strong
+						>Express</strong
+					>.
+				</li>
+				<li>
+					<strong>RunKit:</strong>
+					<strong>RunKit</strong> no está directamente relacionado con
+					<strong>Express.js</strong>, pero es una herramienta en
+					línea que permite probar y documentar código <strong
+						>Node.js</strong
+					>. Es útil para experimentar con código <strong
+						>Node.js</strong
+					> y compartirlo de manera interactiva.
+				</li>
+			</ul>
+			<p class="interFont text-lg">
+				<strong>Express.js</strong> sigue siendo una opción popular para
+				el desarrollo web debido a su simplicidad y flexibilidad. Es
+				ampliamente utilizado para la creación de APIs y aplicaciones
+				web rápidas y eficientes en <strong>Node.js</strong>.
+			</p>
+		</article>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+	#imgNode {
+        transition: transform 0.4s ease-in-out;
+    }
+
+    #imgNode:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+	 #imgExpress {
+        transition: transform 0.4s ease-in-out;
+    }
+
+    #imgExpress:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    
 </style>
